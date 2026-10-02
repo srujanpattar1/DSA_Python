@@ -1,6 +1,7 @@
 ## 1. What is Git and Github ?
    Git is version control system, that keeps track of your code, maintains the log, and stores all the versions of your code locally. Github is a cloud service, where you upload your code, and can access it from anywhere, can collabarate with anyone.
 
+Staging => These are the changes I want included in my next commit.
 
 ## Useful Commands:
 * git config --global user.email "you@example.com"
@@ -13,6 +14,10 @@
 * .gitignore => used to store the impo things like apikeys, .env
 * git switch <filename> => switch the head to specified filename
 * git diff <commit1> <commit2> => shows the difference btw two commits
+* git restore --staged <filename> => unstage a file
+*  git remote -v => gives the repo link
+* git fetch => Go check what's new.
+* git pull => Go get what's new and integrate it.(git fetch + integrate it)
 
 
 ## Other useful commands

@@ -128,3 +128,54 @@
 # print(student)
 
 # for key,value in student.items(): print(key,value)
+
+# def add(a,b):
+#     return a+b
+# print(add(4,5))
+# print(add(10,-4))
+
+# def greet(name): #parameter(place holder)
+#     print("hello", name)
+# greet("srujan") #argument(actual value)
+
+# def sub1(a,b):
+#     print(a-b)
+
+# def sub2(a,b):
+#     return(a-b)
+
+# print(sub1(4,5))
+# sub2(6,10)
+
+# def calci(a,b):
+#     return a+b, a-b
+# x,y=calci(4,5)
+# print(x)
+
+# def is_even(a):
+#     return a%2==0
+# res=is_even(45)
+# print(res)
+
+# def greet(name="srujan"):
+#     return "hello" + " " + name
+# print(greet()) # No argument → use default
+# print(greet("sristi")) #Argument given → use provided value
+
+# def details(name, age, gender):
+#     return(name,age,gender)
+# print(details("srujan",34,"male")) #order doesn't matters
+
+# def details1(name, age, gender):
+#     return(name,age,gender)
+# print(details1(name="srujan", gender="male", age=69)) #irrespective of order in the fun call we get the output
+
+x=10 #global
+def num():
+    print(x)
+num()
+
+def num1():
+    x1=10 #local, value of x is usable only inside this fun
+    print(x1)
+num1()

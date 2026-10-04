@@ -116,4 +116,45 @@ student = {
 - student["branch"]="cse => adds new key value into dict
 - student["age"]=9 => modify the value
 - for key, value in student.items(): print(key,value) => running for loop in dict
-         
+
+## Functions
+- Functions are create to make reusable code
+- Fun must start with def
+Ex: def add(a,b): return a+b
+print(add(4,5))
+print(add(10,-4))
+- Paramater vs Argument
+def greet(name): #parameter(place holder)
+    print("hello", name)
+greet("srujan") #argument(actual value)
+- Return(return backs the result to the function) vs Print(immediately prints the value and returns nothing)
+- def calci(a,b):
+    return a+b, a-b
+x,y=calci(4,5)
+print(x,y)   #can return multiple values
+
+-def is_even(a):
+    return a%2==0
+res=is_even(45)
+print(res) #can return bool values also
+
+- def greet(name="srujan"):
+    return "hello" + " " + name
+print(greet()) # No argument → use default
+print(greet("sristi")) #Argument given → use provided value
+
+- Keyworda argment => where values are provided to the keys
+def details1(name, age, gender):
+    return(name,age,gender)
+print(details1(name="srujan", gender="male", age=69)) #irrespective of order in the fun call we get the output
+
+- Local vs global
+x=10 #global
+def num():
+    print(x)
+num()
+
+def num1():
+    x1=10 #local, value of x is usable only inside this fun
+    print(x1)
+num1()

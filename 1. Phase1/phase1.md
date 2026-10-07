@@ -1,4 +1,5 @@
-## Programming is basically giving instructions to a computer in a language it can understand. Ex: Python
+## What is Programming?
+Programming is basically giving instructions to a computer in a language it can understand. Ex: Python
 ## Python 
 - It is high level language
 - Used in AIML/Automation/DSA/Data science/Webdev
@@ -28,7 +29,7 @@ type coversion or type casting => changing of one data type to another
 - Arithmetic : +  -  *  /  //  %  **
 - Comparison : ==  !=  >  <  >=  <=
 - Logical : and  or  not
-- Assignment : =  +=  -=  *=  /= 
+- Assignment : ( =  +=  -=  *=  /= )
 Expressions => An expression is code that Python can evaluate to produce a value.
 Operands => The things the operator works on are called operands.
 Operators => An operator is a symbol or keyword that tells Python to perform an operation.(ex: +-*/)
@@ -92,11 +93,11 @@ word="SrujanPattar"
 - print(name.find("Pattar")) => searches that substring
 
 Cheat code for slicing of string:
-word[2:5]  => index 2 → 4
-word[:5]   => beginning → 4
-word[2:]   => index 2 → end
-word[:]    => entire string
-word[::2]  => every 2nd character
+word[2:5]  => index 2 → 4,
+word[:5]   => beginning → 4,
+word[2:]   => index 2 → end, 
+word[:]    => entire string, 
+word[::2]  => every 2nd character,
 word[::-1] => reverse
 
 ### Three types of errors:

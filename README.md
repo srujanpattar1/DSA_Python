@@ -2,6 +2,8 @@ Welcome to my Data Structures and Algorithms (DSA) learning repository, where I 
 
 This repository contains implementations, practice problems, and solutions covering everything from basic data structures to algorithmic problem-solving.
 
+**Note:** Do not preview the `.md` file. Open it only in its raw Markdown format.
+
 Syllabus we would cover is: 
 
 Phase 1: Programming Foundations

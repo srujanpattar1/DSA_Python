@@ -1,4 +1,4 @@
-## print("Srujan")
+# # print("Srujan")
 # print("Name: Chintu")
 # print(5+5) #10
 # print("5+5") #5+5
@@ -62,19 +62,20 @@
 # print(name.endswith("s"))
 # print(name.find("Pattar"))
 
-## Mini Project: Student Marks Calculator
-## Build a program that:
-## 1. Takes the student's name
-## 2. Takes marks for 3 subjects
-## 3. Calculates total marks
-## 4. Calculates average
-## 5. Displays the student's name, total and average
-student_name=input("Enter the student name: ")
-subject1=int(input("Enter the marks of subject1"))
-subject2=int(input("Enter the marks of subject2"))
-subject3=int(input("Enter the marks of subject3"))
-total_marks=subject1+subject2+subject3
-avg_marks=(total_marks)/3
-print("Student name: ", student_name)
-print("Total marks: ", total_marks)
-print("Avg marks: ", avg_marks)
+# ## Mini Project: Student Marks Calculator
+# ## Build a program that:
+# ## 1. Takes the student's name
+# ## 2. Takes marks for 3 subjects
+# ## 3. Calculates total marks
+# ## 4. Calculates average
+# ## 5. Displays the student's name, total and average
+# student_name=input("Enter the student name: ")
+# subject1=int(input("Enter the marks of subject1"))
+# subject2=int(input("Enter the marks of subject2"))
+# subject3=int(input("Enter the marks of subject3"))
+# total_marks=subject1+subject2+subject3
+# avg_marks=(total_marks)/3
+# print("Student name: ", student_name)
+# print("Total marks: ", total_marks)
+# print("Avg marks: ", avg_marks)
+

@@ -33,7 +33,8 @@ type coversion or type casting => changing of one data type to another
 Expressions => An expression is code that Python can evaluate to produce a value.
 Operands => The things the operator works on are called operands.
 Operators => An operator is a symbol or keyword that tells Python to perform an operation.(ex: +-*/)
-Operator precedence
+Operator precedence => highest to lowest, 
+`()` → `**` → `* / // %` → `+ -` →  `==, !=, <, >, <=, >=, is, in` → `not` → `and` → `or` 
 
 ### Arithmetic operators
 a=10
@@ -107,3 +108,5 @@ word[::-1] => reverse
 - NameError => The name/variable doesn't exist.
 - TypeError => The operation doesn't work with those types.
 - ValueError => The type is appropriate, but the value isn't valid.
+
+

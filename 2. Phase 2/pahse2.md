@@ -53,3 +53,11 @@ for i in range(0,5):
     if i == 3:
         continue
     print(i)
+
+- there is else for for loop in python, that gets executed only when for loop executes completelty, here else loop will not execute as for loop ends abruptly
+for i in range(1, 6):
+    if i == 3:
+        break
+    print(i)
+else:
+    print("Finished")

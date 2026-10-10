@@ -106,6 +106,28 @@
 #     print(highest_mark)
 #     print(lowest_mark)
 
+# 6. ATM Withdrawal Validator 
+# Create a simple ATM withdrawal program.
+# Ask for:
+# - Account balance
+# - Withdrawal amount
+# The withdrawal is allowed only if:
+# 1. Withdrawal amount is positive.
+# 2. Withdrawal amount does not exceed the balance.
+# 3. Withdrawal amount is a multiple of 100.
+# Display an appropriate message for each situation.
+balance=int(input("balance: "))
+withdraw=int(input("withdraw: "))
+if withdraw > 0:
+    if withdraw > balance:
+        if withdraw%10==0:
+            balance+=withdraw
+        else:
+            print("enter amount in a multiple of 100")
+    else:
+        print("amount does exceeded the balance")
+else:
+    print("enter positive withdrawal amount")
 
-
+        
     

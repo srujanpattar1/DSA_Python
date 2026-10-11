@@ -1,4 +1,4 @@
-# # 1. Student Result Calculator ⭐
+# # 1. Student Result Calculator 
 # # Write a program that accepts a student's marks in 3 subjects.
 # # Calculate and display:
 # # - Total marks
@@ -106,28 +106,117 @@
 #     print(highest_mark)
 #     print(lowest_mark)
 
-# 6. ATM Withdrawal Validator 
-# Create a simple ATM withdrawal program.
-# Ask for:
-# - Account balance
-# - Withdrawal amount
-# The withdrawal is allowed only if:
-# 1. Withdrawal amount is positive.
-# 2. Withdrawal amount does not exceed the balance.
-# 3. Withdrawal amount is a multiple of 100.
-# Display an appropriate message for each situation.
-balance=int(input("balance: "))
-withdraw=int(input("withdraw: "))
-if withdraw > 0:
-    if withdraw > balance:
-        if withdraw%10==0:
-            balance+=withdraw
-        else:
-            print("enter amount in a multiple of 100")
-    else:
-        print("amount does exceeded the balance")
-else:
-    print("enter positive withdrawal amount")
+# # 6. ATM Withdrawal Validator 
+# # Create a simple ATM withdrawal program.
+# # Ask for:
+# # - Account balance
+# # - Withdrawal amount
+# # The withdrawal is allowed only if:
+# # 1. Withdrawal amount is positive.
+# # 2. Withdrawal amount does not exceed the balance.
+# # 3. Withdrawal amount is a multiple of 100.
+# # Display an appropriate message for each situation.
+# balance=int(input("balance: "))
+# withdraw=int(input("withdraw: "))
+# if withdraw > 0 and withdraw %10 == 0 and withdraw < balance :
+#     balance-=withdraw
+#     print("balance: ", balance)
+# else:
+#     print("Enter positive balance")
+# if balance %10 != 0:
+#     print("Enter withdrawal in multiples of 100 only")
+# if withdraw > balance:
+#     print("enter withdrwal less than balance")
 
-        
-    
+# # 7. Number Statistics
+# # Ask the user to enter positive integers repeatedly.
+# # The input ends when the user enters -1.
+# # Before stopping, calculate:
+# # - Number of values entered
+# # - Sum
+# # - Average
+# # - Largest value
+# # - Smallest value
+# # - Number of even values
+# # - Number of odd values
+# # Do not include -1 in the calculations.
+# num=int(input("Enter positive num: "))
+# sum_num=0
+# count_num=0
+# avg_num=0
+# largest_num=None
+# smallest_num=None
+# no_of_even=0
+# no_of_odd=0
+# if num > 0:
+#     while num > 0:
+#         sum_num+=num
+#         count_num+=1
+#         if num%2==0:
+#             no_of_even+=1
+#         else:
+#             no_of_odd+=1
+#         if largest_num is None or largest_num > num:
+#             largest_num=num
+#         if smallest_num is None or smallest_num < num:
+#             smallest_num=num
+#         num=int(input("Enter positive num: "))
+# else:
+#  print("Enter positive num")   
+# print("Sum: ", sum_num)
+# print("total count: ", count_num)
+# print("Avg: ", sum_num/count_num)
+# print("Largest: ", largest_num)
+# print("Smallest: ", smallest_num)
+# print("Even count: ", no_of_even)
+# print("Odd count: ", no_of_odd)
+
+# # 8. Password Validator 
+# # Ask the user to enter a password.
+# # The password is considered valid only if:
+# # - It contains at least 8 characters
+# # - Its first character is not a space
+# # - It contains at least one digit
+# # - It contains at least one uppercase letter
+# # You may use only the string operations you've learned so far.
+# # Display whether the password is valid or invalid.
+# password=input("Enter the password: ")
+# if len(password) >= 8:
+#     if password[0] != " ":
+#         print("Valid password")
+# else:
+#     print("Invalid password")
+
+#  # 9. Prime Number Analyzer 
+#  # Take a positive integer n.
+#  # Determine whether n is prime.
+#  # Then, if it is not prime, display whether it is:
+#  # - Even
+#  # - Odd
+#  # Also display the number of divisors it has.
+# num=int(input("Enter num: "))
+# count=0
+# if num > 0:
+#     for i in range(2,num):
+#         if num%i==0:
+#             count+=1
+#             print("It is not a prime number")
+#             if num%2==0:
+#                 print("it is even")
+#             else:
+#                 print("it is odd")
+#             break
+#     else:
+#         print("It is a prime num")
+# print("count=",count+2)           
+
+# 10. Digital Sum and Reverse 
+# Take a positive integer and perform two operations:
+# 1. Find the sum of its digits.
+# 2. Reverse the number.
+num=input("Enter num: ")
+sum=0
+for i in num[::-1]:
+    print(i, end="")
+    sum+=int(i)
+print("Sum: ", sum)

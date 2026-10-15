@@ -4,7 +4,6 @@
 - Set
 - Dictionaries
 
-
 ## List
 - collection of elemenets of different data structure
 - mutable 
@@ -54,3 +53,15 @@ print(a is b) #both are pointing to different list with same value
 Ex- 
 a=[10,20,30,40]
 print(a[::])
+
+### Ways of adding into list-
+num=[1,2,3,4,5]
+- num.append([1,2,3]) #adds entire new list as a single value into original list
+- num.extend([4,5,6]) #adds all the elements from the given list into original list
+- num.insert(6,6) #adds value at the mentioned index
+
+### Ways of deleting into list-
+num1=[1,2,3,4,2]
+- a=num1.pop(1) #removes the value in index 1 and does return the value
+- del num1[1] #remoces the value in index 1 and doesn't return the value
+- num1.remove(2) #removes the first apperaing 2

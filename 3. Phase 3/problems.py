@@ -1,5 +1,4 @@
-numb=[10,20,30,40,50]
-
+# numb=[10,20,30,40,50]
 # print(len(numb))
 # for num in numb:
 #     print(num)
@@ -86,24 +85,49 @@ numb=[10,20,30,40,50]
 # print(largest)
 
 # numbers = [12, -4, 25, -9, 3, 18]
-# # Calculate and print:
-# # 1. The sum of all numbers.
-# # 2. How many numbers are positive.
-# # 3. The largest number.
-# # 4. The smallest number.
-# sum=0
-# largest=numbers[0]
-# smallest=numbers[0]
-# count=0
-# for num in numbers:
-#     sum+=num
-#     if num > 0:
-#         count += 1
-#     if num > largest:
-#         largest=num
-#     if num<smallest:
-#         smallest=num
-# print(largest)
-# print(smallest)
-# print(count)
-# print(sum)
+# # # Calculate and print:
+# # # 1. The sum of all numbers.
+# # # 2. How many numbers are positive.
+# # # 3. The largest number.
+# # # 4. The smallest number.
+# if not numbers:
+#     print("It is empty")
+# else: 
+#     total=0
+#     largest=numbers[0]
+#     smallest=numbers[0]
+#     count=0
+#     for num in numbers:
+#         total+=num
+#         if num > 0:
+#             count += 1
+#         if num > largest:
+#             largest=num
+#         if num<smallest:
+#             smallest=num
+#         print(largest)
+#         print(smallest)
+#         print(count)
+#         print(total)
+        
+# list1=[1]
+# if not list1 :
+#     print("it is empty")
+# else:
+#     print("It is not empty")
+
+# num=[1,2,3,4,5]
+# num.append([1,2,3]) #adds entire new list as a single value
+# print(num)
+# num.extend([4,5,6]) #adds all the elements from the given list into original list
+# print(num)
+# num.insert(6,6) #adds value at the mentioned index
+# print(num)
+# print(num[5])
+
+num1=[1,2,3,4,2]
+# a=num1.pop(1) #removes the value in index 1 and does return the value
+# del num1[1] #remoces the value in index 1 and doesn't return the value
+# num1.remove(2) #removes the first apperaing 2
+num1.clear()
+print(num1)

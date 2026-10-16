@@ -5,6 +5,7 @@
 - Dictionaries
 
 ## List
+- []
 - collection of elemenets of different data structure
 - mutable 
 - ordered
@@ -65,3 +66,24 @@ num1=[1,2,3,4,2]
 - a=num1.pop(1) #removes the value in index 1 and does return the value
 - del num1[1] #remoces the value in index 1 and doesn't return the value
 - num1.remove(2) #removes the first apperaing 2
+
+Note: 
+a=[1,2]
+b=a
+a+=[3] //modifies the given list
+a=a+[4] //creates a new list and reassigns it
+a.append(5)
+print(a)
+print(b)
+
+## Tuples
+- ()
+- ordered collection of elements
+- indexed
+- not mutable 
+
+### tuple unpacking
+details=("srujan", 21, "CSE")
+name, age, branch=details
+print(name)
+print(details[0])

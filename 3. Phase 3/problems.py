@@ -125,9 +125,33 @@
 # print(num)
 # print(num[5])
 
-num1=[1,2,3,4,2]
-# a=num1.pop(1) #removes the value in index 1 and does return the value
-# del num1[1] #remoces the value in index 1 and doesn't return the value
-# num1.remove(2) #removes the first apperaing 2
-num1.clear()
-print(num1)
+# num1=[1,2,3,4,2]
+# # a=num1.pop(1) #removes the value in index 1 and does return the value
+# # del num1[1] #remoces the value in index 1 and doesn't return the value
+# # num1.remove(2) #removes the first apperaing 2
+# num1.clear()
+# print(num1)
+
+# a=[1,2]
+# b=a
+# a+=[3]
+# a=a+[4]
+# a.append(5)
+# print(a)
+# print(b)
+
+# details=("srujan", 21, "CSE")
+# name, age, branch=details
+# print(name)
+# print(details[0])
+
+# a=5
+# b=10
+# c=15
+# a,b,c=c,a,b
+
+valuee="srujan",30,"asd"
+a,*b=valuee
+print(a)
+print(b)
+print(type(b))

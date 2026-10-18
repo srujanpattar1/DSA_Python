@@ -82,8 +82,36 @@ print(b)
 - indexed
 - not mutable 
 
+Note: 
+a=(1) #int
+a=(1,) #tuple
+
 ### tuple unpacking
 details=("srujan", 21, "CSE")
 name, age, branch=details
 print(name)
 print(details[0])
+
+
+## Sets
+- {}
+- collection of unique elements, removes duplicate values
+Note: 
+a = {}
+b = set()
+print(type(a)) #dict
+print(type(b)) #set
+
+### Set Manipulation
+#### Removing
+a={1,2,3,4,1,2,4}
+a.discard(6) #if that value doesn't exists, it will not throw an error
+a.remove(6) #if that value doesn't exists, it will throw key error
+
+A = {1, 2, 3, 4}
+B = {3, 4, 5, 6}
+print(A|B) #All unique elements from both sets.
+print(A&B) #Elements common in both the sets.
+print(A^B) #Elements that are not common.
+print(A-B) #elemetns in A that aren't in B.
+print(B-A) #elemetns in B that aren't in A.

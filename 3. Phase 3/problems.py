@@ -150,8 +150,32 @@
 # c=15
 # a,b,c=c,a,b
 
-valuee="srujan",30,"asd"
-a,*b=valuee
-print(a)
-print(b)
-print(type(b))
+# valuee="srujan",30,"asd",20,304,50
+# a,*b,c=valuee
+# print(a)
+# print(b)
+# print(c)
+# print(type(b))
+
+# values=(1,2,3,4)
+# a,*b=values
+# b.append(8)
+# print(a)
+# print(b)
+# print(values)
+
+# value={1,2,3,4,1,2,3,4}
+# value.add(4)
+# value.add(5)
+# print(value)
+
+# a={1,2,3,4,1,2,4}
+# a.discard(6) #if that value doesn't exists, it will not throw an error
+# a.remove(6) #if that value doesn't exists, it will throw key error
+
+A = {1, 2, 3, 4}
+B = {3, 4, 5, 6}
+print(A|B) #All unique elements from both sets.
+print(A&B) #Elements common in both the sets.
+print(A-B) #elemetns in A that aren't in B.
+print(A^B) #Elements that are not common.

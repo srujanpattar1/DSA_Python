@@ -173,9 +173,27 @@
 # a.discard(6) #if that value doesn't exists, it will not throw an error
 # a.remove(6) #if that value doesn't exists, it will throw key error
 
-A = {1, 2, 3, 4}
-B = {3, 4, 5, 6}
-print(A|B) #All unique elements from both sets.
-print(A&B) #Elements common in both the sets.
-print(A-B) #elemetns in A that aren't in B.
-print(A^B) #Elements that are not common.
+# A = {1, 2, 3, 4}
+# B = {3, 4, 5, 6}
+# print(A|B) #All unique elements from both sets.
+# print(A&B) #Elements common in both the sets.
+# print(A-B) #elemetns in A that aren't in B.
+# print(A^B) #Elements that are not common.
+
+# num=[2,3,4,5,2,3,4,9,7]
+# converted=set(num) #to convert into set, in random order
+# convert=list(dict.fromkeys(num)) #to convert into set, in same order of list
+# print(convert)
+
+details={
+    "name":"srujan",
+    "age":21,
+    "branch":"cse",
+    "name":"sristi"
+}
+print(details["name"]) #latest name key's value will print, "sristi"
+
+### accessing values
+print(details["cgpa"]) #raises error if that key is not found
+print(details.get("cgpa", "hello")) #if not found, doesn't raises any error, if key value is not found, then default value will display
+

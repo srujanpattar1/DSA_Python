@@ -115,3 +115,17 @@ print(A&B) #Elements common in both the sets.
 print(A^B) #Elements that are not common.
 print(A-B) #elemetns in A that aren't in B.
 print(B-A) #elemetns in B that aren't in A.
+
+Note:
+num=[2,3,4,5,2,3,4,9,7]
+converted=set(num) #to convert into set, in random order
+convert=list(dict.fromkeys(num)) #to convert into set, in same order of list
+print(convert)
+
+## Dictionary 
+- {}
+- mutuable
+- stores data in key value pair
+- keys -> should be unique, if repeated last assigned value will be considered
+- values -> multiple keys can have same values
+- 

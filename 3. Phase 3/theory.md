@@ -128,4 +128,60 @@ print(convert)
 - stores data in key value pair
 - keys -> should be unique, if repeated last assigned value will be considered
 - values -> multiple keys can have same values
+
+details={
+    "name":"srujan",
+    "age":21,
+    "branch":"cse",
+    "name":"sristi"
+}
+
+### Accessing the key:
+print(details["cgpa"]) #raises error if that key is not found
+print(details.get("cgpa", "hello")) #if not found, doesn't raises any error, if key value is not found, then default value will display
+
+### Adding, Updating and Removing
+details["name"]="Srujan" #updating the new value to the existsing key
+details["cgpa"]=9.1 #added new key value pair
+del details["age"] #deleting the key
+print(details)  
+print("Gender" in details) #checking is that key present in the dict
+
+Note: 
+print(details.keys()) #returns all the keys only
+print(details.values()) #returns all the values only
+print(details.items()) #returns key value pair in tuples
+
+uisng for loop and .items(), to iterate:
+shop={
+    "apple":50,
+    "mango":90,
+    "green_apple":30
+}
+for fruit, price in shop.items():
+    if price > 40:
+        print(fruit,price)
+
+
+### Different ways of deleting key value pair
+del shop["apple"] #removes that key
+x=shop.pop("mango") #removes that key and stores in var x
+shop.clear() #deletes entire dict
+
+### Frequency in dict
+frequency={}
+numbers=[2,3,4,2,3,5,8]
+for num in numbers:
+    if num in frequency:
+        frequency[num]+=1
+    else:
+        frequency[num]=1
+print(frequency)
+
+for num in numbers:
+    frequency[num]=frequency.get(num,0)+1 
+print(frequency)
+
+## Nested Data structure
+- one data structure within another data structure
 - 

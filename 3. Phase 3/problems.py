@@ -185,15 +185,62 @@
 # convert=list(dict.fromkeys(num)) #to convert into set, in same order of list
 # print(convert)
 
-details={
-    "name":"srujan",
-    "age":21,
-    "branch":"cse",
-    "name":"sristi"
-}
-print(details["name"]) #latest name key's value will print, "sristi"
+# details={
+#     "name":"srujan",
+#     "age":21,
+#     "branch":"cse",
+#     "name":"sristi"
+# }
+# # print(details["name"]) #latest name key's value will print, "sristi"
+# # print(details["cgpa"]) #raises error if that key is not found
+# # print(details.get("cgpa", "hello")) #if not found, doesn't raises any error, if key value is not found, then default value will display
+# details["name"]="Srujan"
+# details["cgpa"]=9.1
+# del details["age"]
+# print(details) 
+# print("Gender" in details)
 
-### accessing values
-print(details["cgpa"]) #raises error if that key is not found
-print(details.get("cgpa", "hello")) #if not found, doesn't raises any error, if key value is not found, then default value will display
+# print(details.keys()) #returns all the keys only
+# print(details.values()) #returns all the values only
+# print(details.items()) #returns key value pair in tuples
 
+# shop={
+#     "apple":50,
+#     "mango":90,
+#     "green_apple":30
+# }
+# # # for fruit, price in shop.items():
+# # #     if price > 40:
+# # #         print(fruit,price)
+
+# del shop["apple"] #removes that key
+# x=shop.pop("mango") #removes that key and stores in var x
+# shop.clear() #deletes entire dict
+
+# frequency={}
+# numbers=[2,3,4,2,3,5,8]
+# for num in numbers:
+#     if num in frequency:
+#         frequency[num]+=1
+#     else:
+#         frequency[num]=1
+# print(frequency)
+
+# for num in numbers:
+#     frequency[num]=frequency.get(num,0)+1 
+# print(frequency)
+
+student=[
+    {"name":"srujan", "cgpa": 8.74},
+    {"name": "sristi", "cgpa": 9.6}
+]
+print(student[1]["name"])
+
+
+
+
+
+
+
+
+ 

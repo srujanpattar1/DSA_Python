@@ -230,11 +230,154 @@
 #     frequency[num]=frequency.get(num,0)+1 
 # print(frequency)
 
-student=[
-    {"name":"srujan", "cgpa": 8.74},
-    {"name": "sristi", "cgpa": 9.6}
-]
-print(student[1]["name"])
+# student=[
+#     {"name":"srujan", "cgpa": 8.74},
+#     {"name": "sristi", "cgpa": 9.6}
+# print(student[1]["name"])
+
+# # Create fruits lis
+# fruits=["apple", "banana", "cherry"]
+# # Use enumerate
+# for i, j in enumerate(fruits):
+#     print(f"{i}: {j}")
+
+# students=[
+#     {"name":"srujan", "marks":90},
+#     {"name":"sristi", "marks":96},
+#     {"name":"stephen", "marks":93}
+# ]
+# total=0
+# for marks in students:
+#     print(marks["marks"])
+# print(total)
+# print(students[0]["marks"])
+
+# students=[
+#     {"name":"srujan", "marks":90},
+#     {"name":"sristi", "marks":96},
+#     {"name":"stephen", "marks":93}
+# ]
+# topper=students[0]
+# for student in students:
+#     if student["marks"] >= topper["marks"]:
+#         topper=student
+# print(topper["name"])
+# print(topper["marks"])
+
+# import copy
+# student=[
+#     {"name":"srujan", "marks":90},
+#     {"name":"sristi", "marks":96},
+#     {"name":"stephen", "marks":93}
+# ]
+# a=student #Both variables refer to the same outer list
+# students=student.copy() #shallow copy, new list but still both list are pointing out to the same dict values
+# studentss=copy.deepcopy(student) #deep copy, new independent list and independent dict values
+# studentss[0]["marks"]=99
+# a[0]["marks"]=89
+# print(a)
+# print(students)
+# print(studentss)
+# print(student is a)
+# print(student is students)
+
+# numbers = [10, 20, 30, 20]
+# a = numbers
+# b = numbers.copy()
+# a[0] = 99
+# b.append(50)
+# numbers.remove(20)
+# print(numbers)
+# print(a)
+# print(b)
+# print(numbers is a)
+# print(numbers == b)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -184,4 +184,44 @@ print(frequency)
 
 ## Nested Data structure
 - one data structure within another data structure
-- 
+example:
+students=[
+    {"name":"srujan", "marks":90},
+    {"name":"sristi", "marks":96},
+    {"name":"stephen", "marks":93}
+]
+topper=students[0]
+for student in students:
+    if student["marks"] >= topper["marks"]:
+        topper=student
+print(topper["name"])
+print(topper["marks"])
+
+### Shallow copy and deep copy
+
+import copy
+student=[
+    {"name":"srujan", "marks":90},
+    {"name":"sristi", "marks":96},
+    {"name":"stephen", "marks":93}
+]
+a=student #Both variables refer to the same outer list
+students=student.copy() #shallow copy, new list but still both list are pointing out to the same dict values
+studentss=copy.deepcopy(student) #deep copy, new independent list and independent dict values
+studentss[0]["marks"]=99
+a[0]["marks"]=89
+print(a)
+print(students)
+print(studentss)
+print(student is a) #True
+print(student is students) #False
+
+Note:
+- == -> checks whether both the values are equal
+- is -> checks whether both the variable are refering to the same object
+
+### When to use what type of DS:
+- list ->	You need an ordered, changeable collection that allows duplicates
+- tuple	-> You need an ordered collection that shouldn't be structurally changed
+- set	-> You need unique elements and efficient membership checks
+- dict ->	You need to associate keys with values, such as counting frequencies
